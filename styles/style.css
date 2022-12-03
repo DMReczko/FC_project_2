@@ -2,92 +2,78 @@
 
 * {
     box-sizing: border-box;
-  }
-
+}
 
 html {
     scroll-behavior: smooth;
 }
 
-
-body { 
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
+    font-size: 18px;
     font-weight: 400;
     color: white;
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
 }
 
-
-a { 
+a {
     color: inherit;
     text-decoration: none;
- } 
-
+}
 
 .container {
     margin-left: 14px;
     margin-right: 14px;
 }
 
-
 /*---  Navigation  ---*/
 
 .navbar-ribbon {
-    display:flex;
+    display: flex;
     width: 100%;
     height: 50px;
-    background-color: #4E4E4E;
+    background-color: #4e4e4e;
     align-content: center;
-    top:0px;
-    position:sticky;
+    top: 0px;
+    position: sticky;
     z-index: 1000;
 }
 
-
 .navbar {
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     line-height: 21px;
-    font-size: 18px;
     align-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
 
-
-nav {
+.navigation {
     display: none;
 }
-
 
 .comp-name {
     color: white;
     font-weight: 700;
 }
 
-
 .dis-link {
     cursor: not-allowed;
 }
 
-
-
 /*---  Header  ---*/
 
-
 .page-header {
-    height: 574px; 
+    height: 574px;
     display: flex;
-    background: linear-gradient(
-        rgba(5, 42, 66, 0.6),
-        rgba(0, 38, 60, 0.6)
-      ), url("https://images.unsplash.com/photo-1667645336934-14f086562b49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center fixed; 
+    background: linear-gradient(rgba(5, 42, 66, 0.6), rgba(0, 38, 60, 0.6)),
+        url("https://images.unsplash.com/photo-1667645336934-14f086562b49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80")
+            no-repeat center fixed;
     background-size: cover;
     align-items: center;
 }
-
 
 .header-content {
     margin-left: 14px;
@@ -95,67 +81,57 @@ nav {
     scroll-behavior: smooth;
 }
 
-
 .header-smallbox {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
-
 
 .intro {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .intro-2 {
     font-weight: 700;
-    font-size: 18px;
     line-height: 21px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 }
 
-
-.offer-link {
+.header-smallbox a {
     display: block;
     text-align: center;
     width: 164px;
     height: 41px;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
     transition: 1s ease-out;
     background-color: transparent;
-    color:inherit;
+    color: inherit;
     font-weight: 700;
-    font-size: 18px;
     line-height: 21px;
     padding-top: 7px;
-  }
-  
-.offer-link:hover {
+}
+
+.header-smallbox a:hover {
     background-color: white;
     color: black;
-  }
-
-
+}
 
 /*---  About section - employees  ---*/
-
 
 .about-content {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-
 .about-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    color: #152D41;
+    color: #152d41;
     text-align: center;
-    }
-
+}
 
 .employee {
     color: black;
@@ -167,7 +143,6 @@ nav {
     padding-top: 50px;
 }
 
-
 .employee-pic {
     margin-bottom: 40px;
     flex: 0 0 221px;
@@ -175,61 +150,53 @@ nav {
     background-size: cover;
     width: 221px;
     height: 221px;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .em-pic-1 {
     background-image: url("../media/horace.png");
-    }
+}
 
 .em-pic-2 {
     background-image: url("../media/minerva.jpg");
-    }
+}
 
 .em-pic-3 {
     background-image: url("../media/mugwump.png");
-    }
+}
 
 .em-pic-4 {
     background-image: url("../media/snivellus.jpeg");
-    }
-
+}
 
 .bio-name {
     font-weight: 700;
-    font-size: 18px;
     line-height: 21px;
 }
 
 .bio-desc {
     font-weight: 400;
-    font-size: 18px;
     line-height: 21px;
     margin-top: 25px;
 }
 
-
-
 /*---  Offer section  ---*/
 
-
 .offer-content {
-    background-color: #405D78;
+    background-color: #405d78;
 }
 
 .our-offer {
     padding-top: 76px;
 }
 
-
 .offer-header {
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
-
 
 .all-offers {
     display: flex;
@@ -238,13 +205,11 @@ nav {
     gap: 42px;
     margin: auto;
     margin-top: 60px;
-    padding-bottom: 45px;  
-    
+    padding-bottom: 45px;
 }
 
-
 .offer-box {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     height: 197px;
     width: 197px;
     font-weight: 400;
@@ -255,7 +220,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;    
+    color: black;
     transition: all 0.5s ease-out;
 }
 
@@ -269,15 +234,15 @@ nav {
 }
 
 .offer-new::before {
-    content:"";
-    display:block;
+    content: "";
+    display: block;
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background-color: #E07A64;
-    position:absolute;
+    background-color: #e07a64;
+    position: absolute;
     top: -15px;
-    left: -15px; 
+    left: -15px;
 }
 
 .new-text {
@@ -286,30 +251,24 @@ nav {
     line-height: 21px;
 }
 
-
-
 /*---  Footer  ---*/
 
-
 .footer-box {
-    height: 150px;
-    background-color: #4E4E4E;
+    background-color: #4e4e4e;
 }
 
-
 .footer {
-    display:flex;
-    height: 150px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
     text-align: center;
     line-height: 21px;
     font-weight: 700;
-    font-size: 18px;
-    color:white;
+    color: white;
+    padding-top: 38px;
+    padding-bottom: 42px;
 }
-
 
 .icon-box {
     display: flex;
@@ -319,10 +278,7 @@ nav {
     gap: 18px;
 }
 
-
-
 /*---  Media queries  - medium phone ---*/
-
 
 @media screen and (min-width: 425px) {
     .offer-box {
@@ -330,7 +286,6 @@ nav {
         width: 340px;
     }
 }
-
 
 /*---  Media queries  - Tablet ---*/
 
@@ -340,29 +295,26 @@ nav {
         margin-right: 24px;
     }
 
-
     /*---  Tablet - Navigation  ---*/
 
-    nav {
-      display: contents;
+    .navigation {
+        display: contents;
     }
-    
-        
+
     .nav-list {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         list-style-type: none;
         font-weight: 400;
-        color: #F1F1F1;
+        color: #f1f1f1;
     }
-    
-    
+
     .nav-list-el {
         margin-left: 46px;
-        position:relative;
+        position: relative;
     }
-    
+
     .nav-list-el::after {
         content: "";
         position: absolute;
@@ -373,11 +325,10 @@ nav {
         background-color: #556163;
         transition: all 0.5s ease-in;
     }
-    
+
     .nav-list-el:hover::after {
         width: 100%;
     }
-
 
     /*---  Tablet - Header  ---*/
 
@@ -386,12 +337,10 @@ nav {
         background-size: cover;
         align-items: center;
     }
-    
 
     .header-smallbox {
         width: 551px;
     }
-
 
     /*---  Tablet - About ---*/
 
@@ -399,23 +348,19 @@ nav {
         flex-direction: row;
         text-align: left;
     }
-    
-    
+
     .employee:nth-of-type(even) {
         flex-direction: row-reverse;
         text-align: right;
     }
-    
-    
-    .employee:nth-of-type(odd) .employee-bio  {
+
+    .employee:nth-of-type(odd) .employee-bio {
         margin-left: 40px;
     }
-    
-    
-    .employee:nth-of-type(even) .employee-bio  {
+
+    .employee:nth-of-type(even) .employee-bio {
         margin-right: 40px;
     }
-
 
     .employee-pic {
         flex: 0 0 197px;
@@ -424,7 +369,6 @@ nav {
         margin-bottom: 0;
     }
 
-    
     /*---  Tablet - Offer ---*/
 
     .our-offer {
@@ -439,48 +383,37 @@ nav {
         grid-template-columns: auto auto;
         gap: 50px;
         margin-top: 83px;
-        padding-bottom: 64px;          
+        padding-bottom: 64px;
     }
-    
-    
+
     .offer-box {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         height: 260px;
         width: 260px;
     }
-    
-    
+
     .offer-new::before {
         width: 30px;
         height: 30px;
         top: -10px;
-        left: -10px; 
+        left: -10px;
     }
-    
 
     /*---  Tablet - Footer ---*/
 
-    .footer-box {
-        height: 50px;
-    }
-    
-    
     .footer {
-        height:50px;
         align-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    
-    
+
     .icon-box {
         justify-content: space-between;
     }
-
 }
-
-
 
 /*---  Media queries  - Laptop ---*/
 
@@ -490,14 +423,12 @@ nav {
         margin: 0 auto;
     }
 
-
     /*---  Laptop - Navigation  ---*/
 
     .navbar {
         padding-left: 0;
         padding-right: 0;
     }
-
 
     /*---  Laptop - Header  ---*/
 
@@ -506,34 +437,29 @@ nav {
         margin-right: auto;
     }
 
-    
     .about-header {
         text-align: left;
     }
 
-
     /*---  Laptop - About  ---*/
 
-    .employee:nth-of-type(odd) .employee-bio  {
+    .employee:nth-of-type(odd) .employee-bio {
         margin-left: 60px;
     }
-    
-    
-    .employee:nth-of-type(even) .employee-bio  {
+
+    .employee:nth-of-type(even) .employee-bio {
         margin-right: 60px;
     }
 
-
     /*---  Laptop - Offer  ---*/
-    
+
     .offer-header {
         text-align: left;
     }
 
-
     .all-offers {
         grid-template-columns: auto auto auto;
-        gap: 63px;          
+        gap: 63px;
     }
 
     .offer-box {
@@ -541,6 +467,3 @@ nav {
         width: 197px;
     }
 }
-
-
-
